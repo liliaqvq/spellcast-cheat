@@ -26,12 +26,13 @@ SpellCast is a turn-based word game where players search for words on a 5x5 grid
 
 Imagine you have the following letters on the SpellCast game board:
 
+```
 A B C D E
 F G H I J
 K L M N O
 P Q R S T
 U V W X Y
-
+```
 
 Fill the tiles on the cheat with these letters, click "Find Words," and the cheat will present a list of valid words based on the provided letter combination.
 
