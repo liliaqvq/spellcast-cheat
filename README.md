@@ -1,6 +1,8 @@
-# Hello World with React boilerplate
+# SpellCast Discord Game Cheat 
 
 Start coding a react application
+![image](https://github.com/liliaqvq/lili-aqvq-spellcast-cheat/assets/130264861/cd0673c5-8df8-4efc-8162-50256ca909ca)
+
 
 > If you are working locally instead of using codespaces or gitpod, please follow [local installation steps](#local-installation-skip-if-you-are-working-on-codespaces-or-gitpod) and come back to this part of the readme.
 
