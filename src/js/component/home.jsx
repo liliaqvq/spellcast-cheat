@@ -38,6 +38,10 @@ const Home = () => {
         }
     };
 
+	const handleFindWords = () => {
+		
+	}
+
 	return (
 		<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '20px' }}>
 			<div>
@@ -60,6 +64,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
+			<button className="find-button" onClick={handleFindWords}>Find Words</button>
 		</div>
 	);
 };
