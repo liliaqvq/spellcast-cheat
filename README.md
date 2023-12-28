@@ -25,6 +25,7 @@ SpellCast is a turn-based word game where players search for words on a 5x5 grid
 ## Example Usage
 
 Imagine you have the following letters on the SpellCast game board:
+
 A B C D E
 F G H I J
 K L M N O
