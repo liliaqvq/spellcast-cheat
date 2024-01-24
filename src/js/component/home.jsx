@@ -6,25 +6,17 @@ import "../../styles/index.css";
 
 //create your first component
 const Home = () => {
-  // State to store the loaded words
-  const [dictionary, setDictionary] = useState([]);
-
-  // Load words from words.txt using useEffect
-  useEffect(() => {
-    const loadDictionary = async () => {
-      try {
-        const response = await fetch("words.txt");
-        const text = await response.text();
-        const words = text.split("\n").map((word) => word.trim());
-        setDictionary(words);
-      } catch (error) {
-        console.error("Error loading dictionary:", error);
-      }
-    };
-
-    loadDictionary();
-  }, []);
-
+  const dictionary = [
+    "whale",
+    "hello",
+    "cookie",
+    "cream",
+    "chocolate",
+    "pizza",
+    "love",
+    "cat",
+    "dog",
+  ];
   const inputRefs = Array.from({ length: 25 }, () => useRef(null));
 
   const handleInputChange = (index, event) => {
@@ -57,22 +49,7 @@ const Home = () => {
     }
   };
 
-  const handleFindWords = () => {
-    // Gather the input values from the refs
-    const inputValues = inputRefs.map((ref) => ref.current.value).join("");
-
-    // Check all possible substrings for valid words
-    for (let start = 0; start < inputValues.length; start++) {
-      for (let end = start + 1; end <= inputValues.length; end++) {
-        const substring = inputValues.slice(start, end);
-
-        // Check if the substring forms a valid word
-        if (dictionary.includes(substring.toUpperCase())) {
-          alert(`Valid word: ${substring.toUpperCase()}`);
-        }
-      }
-    }
-  };
+  const handleFindWords = () => {};
 
   return (
     <div
